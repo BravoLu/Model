@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>file-open.png</file>
+        <file>file-save.png</file>
+        <file>myico.ico</file>
+        <file>china.png</file>
+        <file>lishi.png</file>
+        <file>wall.png</file>
+        <file>wall3.png</file>
+        <file>纹理.png</file>
+        <file>纹理1.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>
