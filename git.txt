@@ -1,8 +1,0 @@
-git add 文件名  //将文件加入暂存区中。
-git commit -m " "  //将暂存区中的所有内容提交到当前分支
-git remote add orgin_2 git@github.com::BravoLu/Model.git  //将远程github与git连接，名字我origin_2
-git push -u orgin_2 master  //将当前master加入到orgin_2这个远程库中
-git status  //当前分支状态
-git log  //修改状态记录
-git reset --hard + ID //返回ID所在时刻
-git reset -hard HEAD^  //后退一步
