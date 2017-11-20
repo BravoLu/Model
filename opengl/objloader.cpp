@@ -17,7 +17,7 @@ ObjLoader::ObjLoader(string filename)
     while(!f.eof()){
 
         getline(f,line);
-
+        //cout << line <<endl;
         vector<string> parameters;
 
         string tailMark = " ";
@@ -39,19 +39,17 @@ ObjLoader::ObjLoader(string filename)
             }
         }
 
-        if (parameters.size() != 4) {
-            cout << "the size is not correct" << endl;
-        }
-
-        else{
+//        if (parameters.size() != 4) {
+//            cout << "the size is not correct" << endl;
+//        }
+        //qDebug("2");
+        if(parameters.size() == 4){
                if (parameters[0] == "v") {
 
                         vector<GLfloat>Point;
 
                         for (int i = 1; i < 4; i++) {
-
                             GLfloat xyz = atof(parameters[i].c_str());
-
                             vSets.push_back(xyz);
                             vNum++;
                         }
@@ -76,6 +74,8 @@ ObjLoader::ObjLoader(string filename)
                                     break;
                                 }
                             }
+                            //qDebug("1");
+                            //cout<<ans <<endl;
                             GLint index = atof(ans.c_str());
                             index--;
 
@@ -86,23 +86,47 @@ ObjLoader::ObjLoader(string filename)
 //                       fSets.push_back(vIndexSets);
 //                        fNum++;
                     }
-//                     else if (parameters[0] == "vn") {
+                     else if (parameters[0] == "vn") {
 
-//                               for (int i = 1; i < 4; i++) {
-//                                   GLfloat vnxyz = atof(parameters[i].c_str());
-//                                   vnSets.push_back(vnxyz);
-//                               }
+                               for (int i = 1; i < 4; i++) {
+                                   GLfloat vnxyz = atof(parameters[i].c_str());
+                                   vnSets.push_back(vnxyz);
+                               }
 
-//                           }
+                           }
 
-//                           else if (parameters[0] == "vt") {
+                           else if (parameters[0] == "vt") {
 
-//                               for (int i = 1; i < 4; i++) {
-//                                   GLfloat vnxyz = atof(parameters[i].c_str());
-//                                   vtSets.push_back(vnxyz);
-//                               }
+                               for (int i = 1; i < 4; i++) {
+                                   GLfloat vnxyz = atof(parameters[i].c_str());
+                                   vtSets.push_back(vnxyz);
+                               }
 
-//                   }
+                   }
+        }
+        else if(parameters.size() == 5)
+        {
+            if(parameters[0] == "f")
+            {
+                for (int i = 1; i < 5; i++){
+                    string x = parameters[i];
+                    string ans = "";
+                    for (int j = 0; j < x.length(); j++) {
+                        char ch = x[j];
+                        if (ch != '/') {
+                            ans += ch;
+                        }
+                        else {
+                            break;
+                        }
+                    }
+                    GLint index = atof(ans.c_str());
+                    index--;
+
+                    FSets.push_back(index);
+                    FNum++;
+                }
+            }
         }
     }
     f.close();

@@ -26,19 +26,19 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     openglwindow.cpp \
-    objloader.cpp
+    objmode.cpp
 
 HEADERS += \
         mainwindow.h \
     openglwindow.h \
-    objloader.h
+    objmode.h
 
 FORMS += \
         mainwindow.ui
 
 RESOURCES += \
-    image.qrc \
-    icon.qrc
+    image.qrc
+
 
 QT += opengl
 

@@ -1,22 +1,26 @@
 #ifndef OPENGLWINDOW_H
 #define OPENGLWINDOW_H
 
-#include <QtOpenGL/QGLWidget>
+
 #include <QOpenGLWidget>
-#include <QOpenGLFunctions_3_3_Core>
 #include <QMainWindow>
 #include <QAction>
 #include <QToolBar>
-#include <iterator>
 #include <string>
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <QOpenGLFunctions_3_0>
+#include <objmode.h>
 
-
+extern QString modelname;
+extern int autoRound;
+extern int color;
+extern int LightMode;
 extern int Mode;
+extern float Shininess;
 extern QString filename  ;
-class openglwindow : public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
+class openglwindow : public QOpenGLWidget, protected QOpenGLFunctions_3_0
 {
     Q_OBJECT
 public:

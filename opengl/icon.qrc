@@ -1,5 +1,1 @@
-<RCC>
-    <qresource prefix="/rsc">
-        <file>myico.ico</file>
-    </qresource>
-</RCC>
+<RCC/>

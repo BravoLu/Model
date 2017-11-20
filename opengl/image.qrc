@@ -1,14 +1,22 @@
 <RCC>
     <qresource prefix="/images">
-        <file>file-open.png</file>
-        <file>file-save.png</file>
-        <file>myico.ico</file>
-        <file>china.png</file>
-        <file>lishi.png</file>
-        <file>wall.png</file>
-        <file>wall3.png</file>
-        <file>纹理.png</file>
-        <file>纹理1.png</file>
+        <file>resources/china.png</file>
+        <file>resources/file-open.png</file>
+        <file>resources/file-save.png</file>
+        <file>resources/myico.ico</file>
+        <file>resources/wall.png</file>
+        <file>resources/wall3.png</file>
+        <file>resources/纹理.png</file>
+        <file>resources/纹理1.png</file>
+        <file>resources/start.png</file>
+        <file>resources/toy_box_diffuse.png</file>
+        <file>resources/wood.png</file>
+        <file>resources/bricks2.png</file>
+        <file>resources/bricks2_disp.png</file>
+        <file>resources/bricks2_normal.png</file>
+        <file>resources/metal.png</file>
+        <file>resources/marble.png</file>
+        <file>resources/lishi.png</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

@@ -28,6 +28,50 @@
      </rect>
     </property>
    </widget>
+   <widget class="QSlider" name="verticalSlider">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>60</y>
+      <width>41</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksAbove</enum>
+    </property>
+    <property name="tickInterval">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>630</y>
+      <width>72</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>  亮度</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -59,15 +103,24 @@
     </property>
     <addaction name="separator"/>
     <addaction name="action_2"/>
+    <addaction name="separator"/>
     <addaction name="action_3"/>
+    <addaction name="action_22"/>
+    <addaction name="separator"/>
     <addaction name="action_4"/>
-   </widget>
-   <widget class="QMenu" name="menu_4">
-    <property name="title">
-     <string>操作</string>
-    </property>
-    <addaction name="action_8"/>
-    <addaction name="action_9"/>
+    <addaction name="separator"/>
+    <addaction name="action_21"/>
+    <addaction name="action_26"/>
+    <addaction name="separator"/>
+    <addaction name="action_23"/>
+    <addaction name="separator"/>
+    <addaction name="action_20"/>
+    <addaction name="action_24"/>
+    <addaction name="action_25"/>
+    <addaction name="separator"/>
+    <addaction name="action_27"/>
+    <addaction name="separator"/>
+    <addaction name="action_28"/>
    </widget>
    <widget class="QMenu" name="menu_5">
     <property name="title">
@@ -75,18 +128,36 @@
     </property>
     <addaction name="action_12"/>
     <addaction name="action_14"/>
+    <addaction name="action_19"/>
    </widget>
    <widget class="QMenu" name="menu_6">
     <property name="title">
      <string>帮助(?)</string>
     </property>
     <addaction name="action_15"/>
+    <addaction name="action_35"/>
+   </widget>
+   <widget class="QMenu" name="menu_A">
+    <property name="title">
+     <string>动画(&amp;A)</string>
+    </property>
+    <addaction name="action_R_Ctrl_R"/>
+   </widget>
+   <widget class="QMenu" name="menu_C">
+    <property name="title">
+     <string>颜色(&amp;C)</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_13"/>
+    <addaction name="action_16"/>
+    <addaction name="action_17"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
    <addaction name="menu_3"/>
-   <addaction name="menu_4"/>
+   <addaction name="menu_C"/>
    <addaction name="menu_5"/>
+   <addaction name="menu_A"/>
    <addaction name="menu_6"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -96,6 +167,7 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="separator"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="action_2">
@@ -152,17 +224,102 @@
   </action>
   <action name="action_12">
    <property name="text">
-    <string>点光源</string>
+    <string>平行光源</string>
    </property>
   </action>
   <action name="action_14">
    <property name="text">
-    <string>平行光源</string>
+    <string>点光源</string>
    </property>
   </action>
   <action name="action_15">
    <property name="text">
     <string>使用手册</string>
+   </property>
+  </action>
+  <action name="action_R_Ctrl_R">
+   <property name="text">
+    <string>自动旋转(&amp;R)...  Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>绿色</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>红色</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="text">
+    <string>篮色</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>白色</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="text">
+    <string>聚光</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>手电筒</string>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>砖</string>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>木材</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>大理石2</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>金属</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>砖2</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>砖3</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>木材2</string>
+   </property>
+  </action>
+  <action name="action_27">
+   <property name="text">
+    <string>无</string>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="text">
+    <string>开发人员</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="text">
+    <string>载入纹理...</string>
    </property>
   </action>
  </widget>
