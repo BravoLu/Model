@@ -35,6 +35,7 @@ private:
     QAction *texture_2;
     QAction *texture_3;
     QAction *AutoTurnRound;
+    QAction *stopTurnRound;
 
 private slots:
     void openFile();
@@ -59,12 +60,18 @@ private slots:
     void faceModel();
     void pointModel();
     void AutoTurnRoundFun();
+    void stop();
     void dragSlider();
     void PointLight();
     void DirectionalLight();
-    void FlashLight();
     void develop();
     void loadTexture();
+    void type2();
+    void type1();
+    void loop1();
+    void loop2();
+    void loop3();
+    void loop4();
 };
 
 

@@ -31,7 +31,8 @@ SOURCES += \
 HEADERS += \
         mainwindow.h \
     openglwindow.h \
-    objmode.h
+    objmode.h \
+    loop.h
 
 FORMS += \
         mainwindow.ui
@@ -43,7 +44,5 @@ RESOURCES += \
 QT += opengl
 
 RC_FILE = icon.rc
-
-LIBS += -LE:\QTProject\opengl\ -lassimp
 
 

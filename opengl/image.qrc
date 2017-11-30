@@ -17,6 +17,7 @@
         <file>resources/metal.png</file>
         <file>resources/marble.png</file>
         <file>resources/lishi.png</file>
+        <file>resources/pause.PNG</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

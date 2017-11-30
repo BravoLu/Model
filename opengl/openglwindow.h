@@ -13,6 +13,10 @@
 #include <QOpenGLFunctions_3_0>
 #include <objmode.h>
 
+extern int LOOP;
+extern int iteration ;
+extern int type;
+extern bool modelchange;
 extern QString modelname;
 extern int autoRound;
 extern int color;
